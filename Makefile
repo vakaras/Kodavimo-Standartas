@@ -88,6 +88,16 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+	@echo
+	@echo "Build finished. The PDF files are in $(BUILDDIR)/pdf."
+
+show-html: html
+	xdg-open $(BUILDDIR)/html/index.html
+
+show-pdf: pdf
+	xdg-open $(BUILDDIR)/pdf/stilius.pdf
 
 buildout:
 	bin/buildout -v
