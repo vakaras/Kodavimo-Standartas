@@ -69,8 +69,9 @@ Kodo išdėstymas
 
     .. code-block:: python
 
-        long_string = (u'This is very long string. '
-               u'Very long.')
+        long_string = (
+                u'This is very long string. '
+                u'Very long.')
 
 +   `ID:9` Aukščiausio lygio funkcijų ir klasių aprašymai turėtų būti
     atskirti pora tuščių eilučių.
@@ -152,7 +153,7 @@ Komentarai gali būti dviejų tipų:
     (nebent pirmas žodis yra reikšminis) ir baigiami tašku.
 
 Pavadinimai
-===========
+-----------
 
 +   `ID:17` Klasių vardai turi būti ``CamelCase``.
 +   `ID:18` Išimčių vardai turėtų būti ``CamelCase`` su galūne ``Error``.
