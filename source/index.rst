@@ -194,6 +194,29 @@ Pavadinimai
         books = [book1, book2, book3]
         book_set = set(books)
 
+Django
+------
+
+Pastabos, skirtos sistemoms, rašomoms naudojant
+`Django karkasą <https://www.djangoproject.com/>`_.
+
++   `ID:30` Modelių laukai privalo turėti komentarus. (Kurie gali būti 
+    tušti.) Komentarai rašomi po lauku. Pavyzdžiui:
+
+    .. code-block:: python
+
+        class Poll(models.Model):
+            """ Class comment.
+            """
+
+            question = models.CharField(max_length=200)
+            """ Attribute comment.
+            """
+            
+            pub_date = models.DateTimeField('date published')
+            """
+            """
+
 Lietuviško kodo reikalavimai
 ============================
 
