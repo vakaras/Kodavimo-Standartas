@@ -114,6 +114,21 @@ Kodo išdėstymas
 
         book = (title, [author1, author2])
 
++   `ID:31` Numatytieji funkcijų argumentų reikšmės gali būti tik
+    nekintami objektai. Pavyzdžiui, taip negalima:
+
+    .. code-block:: python
+
+        def foo(bar=[]):
+            ...
+
+    Turėtų būti:
+
+    .. code-block:: python
+
+        def foo(bar=()):
+            ...
+
 +   `ID:28` Visos klasės turi būti naujo tipo Python klasės. (Tai yra
     Python 2.* klasės būtinai turi paveldėti iš ``object``.)
 
